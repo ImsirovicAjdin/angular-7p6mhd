@@ -4,4 +4,13 @@ import { Component } from '@angular/core';
   selector: 'header-area',
   templateUrl: './header.component.html'
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+
+  isCollapsed = true;
+
+  toggleCollapsed() {
+    this.isCollapsed = !this.isCollapsed;
+    console.log(this.isCollapsed);
+  }  
+
+}
